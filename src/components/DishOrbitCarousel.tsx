@@ -579,7 +579,6 @@ export function DishOrbitCarousel({
         </div>
 
         <div className="dsh-acts">
-          <button type="button" className="dsh-btn dsh-act-play" onClick={() => dish && onPlay?.(dish, index)}>{Icon.play}Play video</button>
           <button type="button" className="dsh-btn dsh-act-order" onClick={() => dish && onOrder?.(dish, index)}>{Icon.order}Order pizza</button>
         </div>
 
