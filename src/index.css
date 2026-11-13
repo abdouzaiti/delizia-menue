@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #141414;
+  --color-muted-foreground: #5a5a5a;
+  --color-primary: #009246;
+  --color-delizia-red: #ce2b37;
+  --color-delizia-white: #ffffff;
+  --color-delizia-green: #009246;
+}
+
+.dark {
+  --color-background: #0e0e0e;
+  --color-foreground: #f8f8f6;
+  --color-muted-foreground: #a3a39e;
+  --color-primary: #00a850;
+  --color-delizia-red: #e03a46;
+  --color-delizia-white: #f8f8f6;
+  --color-delizia-green: #00a850;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
